@@ -9,6 +9,7 @@ class PhpBuild < Formula
 
   depends_on "autoconf"
   depends_on "pkg-config"
+  depends_on "bison"
   depends_on "openssl"
   depends_on "libxml2"
 

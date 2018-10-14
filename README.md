@@ -8,7 +8,7 @@ This tap is under active development, with formulae in beta status.
 To install the tap without installing any formula, run:
 
 ~~~ sh
-$ brew tap madumlao/phpenv-tap
+$ brew tap madumlao/phpenv-tap https://github.com/madumlao/phpenv-tap
 ~~~
 
 Afterwards, homebrew will be able to install and run related formula:
@@ -17,12 +17,3 @@ Afterwards, homebrew will be able to install and run related formula:
 $ brew install php-build
 $ brew install phpenv
 ~~~
-
-### Installing from the tap directly
-To install formula from this tap directly, run:
-
-~~~ sh
-$ brew install madumlao/phpenv-tap/php-build
-~~~
-
-This will install the tap in the background, so future runs of `brew install` should no longer need the `madumlao/phpenv-tap` before the formula name.

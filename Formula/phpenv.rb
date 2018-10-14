@@ -13,7 +13,7 @@ class Phpenv < Formula
                                            %Q(\\1"\\2-g#{git_revision}")
     end
 
-    prefix.install ["bin", "completions", "libexec", "phpenv.d"]
+    prefix.install ["bin", "completions", "libexec"]
   end
 
   test do

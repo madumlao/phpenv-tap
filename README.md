@@ -14,6 +14,6 @@ $ brew tap madumlao/phpenv-tap https://github.com/madumlao/phpenv-tap
 Afterwards, homebrew will be able to install and run related formula:
 
 ~~~ sh
-$ brew install php-build
-$ brew install phpenv
+$ brew install --HEAD php-build
+$ brew install --HEAD phpenv
 ~~~

@@ -6,13 +6,6 @@ class Phpenv < Formula
   depends_on "php-build" => :recommended
 
   def install
-    inreplace "libexec/phpenv" do |s|
-      s.gsub! '"${BASH_SOURCE%/*}"/../libexec', libexec
-      if HOMEBREW_PREFIX.to_s != "/usr/local"
-        s.gsub! ":/usr/local/etc/phpenv.d", ":#{HOMEBREW_PREFIX}/etc/phpenv.d\\0"
-      end
-    end
-
     # Compile optional bash extension.
     system "src/configure"
     system "make", "-C", "src"

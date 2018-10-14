@@ -6,10 +6,6 @@ class Phpenv < Formula
   depends_on "php-build" => :recommended
 
   def install
-    # Compile optional bash extension.
-    system "src/configure"
-    system "make", "-C", "src"
-
     if build.head?
       # Record exact git revision for `phpenv --version` output
       git_revision = `git rev-parse --short HEAD`.chomp

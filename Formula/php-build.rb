@@ -1,9 +1,9 @@
 class PhpBuild < Formula
   desc "Builds PHP so that multiple versions can be used side by side"
   homepage "https://github.com/php-build/php-build"
-  url "https://github.com/madumlao/php-build/archive/osx-zlib.zip"
-  sha256 "310f0a25252870fc4d1516f71c630f5ce5b3647687a2d0355c6fb49174fd163b"
-  head "https://github.com/madumlao/php-build.git"
+  # url "https://github.com/madumlao/php-build/archive/osx-zlib.zip"
+  # sha256 "2a903f4e066299334abbf8e4dad6e50bcd0ce9dc557d4097fd5b651d5b2813d9"
+  head "https://github.com/madumlao/php-build.git", branch: 'osx-zlib'
 
   bottle :unneeded
 

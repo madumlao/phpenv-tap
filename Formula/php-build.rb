@@ -13,6 +13,22 @@ class PhpBuild < Formula
   depends_on "openssl"
   depends_on "libxml2"
 
+  # optional dependencies - same as php formula
+  depends_on "curl" => :recommended
+  depends_on "freetype" => :recommended
+  depends_on "gettext" => :recommended
+  depends_on "gmp" => :recommended
+  depends_on "icu4c" => :recommended
+  depends_on "jpeg" => :recommended
+  depends_on "libpng" => :recommended
+  depends_on "libpq" => :recommended
+  depends_on "libtool" => :recommended
+  depends_on "libzip" => :recommended
+  depends_on "mhash" => :recommended
+  depends_on "pcre" => :recommended
+  depends_on "unixodbc" => :recommended
+  depends_on "webp" => :recommended
+
   def install
     ENV["PREFIX"] = prefix
     system "./install.sh"
